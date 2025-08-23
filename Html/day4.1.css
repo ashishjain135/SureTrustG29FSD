@@ -1,0 +1,28 @@
+css
+
+/* tagname{
+    property:value
+} */
+
+/* external css */
+
+
+/* # -> id selector */
+
+#first {
+  background:rgba(50, 47, 11, 0.141);
+  height: 1px;
+  color: blue;
+ 
+}
+
+/* .-> class selector */
+
+.second{
+color:red;
+}
+
+.third{
+  color: blue;
+  background-color: bisque;
+}
