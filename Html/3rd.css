@@ -1,0 +1,48 @@
+*{
+    background-color: lightgrey;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+.box-px{
+    width:200px;
+    /* always fixed width */
+    height: 100px;
+    background: lightcoral;
+    margin-bottom: 50px;
+}
+
+.box-parcent{
+    width:50%;
+    height: 100px;
+    background: lightseagreen;
+    margin-bottom: 50px;
+}
+
+.parent-em{
+    font-size: 20px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.children-em{
+    font-size: 2em;
+    /* 2*20=40px */
+    border: 2px solid red;
+    color:darkblue;
+}
+
+.box-rem{
+    font-size: 2rem;
+    color:darkred;
+    border: 2px solid green;
+    /* 2*16=32px */
+    width: 15rem;
+    padding: 10px;
+}
