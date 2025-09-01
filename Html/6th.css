@@ -1,0 +1,89 @@
+*{
+    background-color: black;
+    color: white;
+}
+
+h1{
+     transition-delay: .4s;
+    transition:background-color 0.4s cubic-bezier(2,4,5,1),transform 0.2s ease-out;
+}
+
+h1:hover{
+    color: #e74c3c;
+    transform:scale(1.1);
+    text-shadow:0 4px 15px rgba(255, 255, 255, 1);
+}
+.btn{
+    background:#3498db;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    transition-delay: .4s;
+    transition:background-color 0.4s cubic-bezier(2,4,5,1),transform 0.2s ease-out;
+}
+.btn:hover{
+    background:#2980b9;
+    transform:scale(1.05);
+    box-shadow:0 4px 15px rgba(255, 255, 255, 1);
+    border-radius:15px;
+}
+.btn:active{
+    transform:scale(0.95);
+    box-shadow:0 2px 10px rgba(230, 14, 14, 0.97);
+}
+.ball{
+    width:60px;
+    height:60px;
+    background:tomato;
+    border-radius:50%;
+    position:relative;
+    /* animation-duration: 1s; */
+    animation: bounce 1s 6 alternate ease-in-out;
+}
+@keyframes bounce{
+   from{
+        top:0;
+        background:tomato;
+    }
+    to{
+        top:100px;
+        left:100px;
+        background:orange;
+        box-shadow:0 4px 15px rgba(205, 180, 180, 1);
+    }
+}
+
+.spinner{
+    width:50px;
+    height:50px;
+    background:tomato;
+    border:5px solid #f3f3f3;
+    border-top:5px solid #3498db;
+    border-radius:50%;
+    animation: spin 1s linear infinite;
+    margin:20px auto;
+}
+
+@keyframes spin{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+.typing{
+    font-size:24px;
+    font-family:monospace;
+    border-right:2px solid white;
+    width:21ch;
+    white-space:nowrap;
+    overflow:hidden;
+    border-color:#e74c3c;
+    cursor:text;
+    color:purple;
+    animation: typing 4s steps(18) infinite normal, blink 0.5s step-end infinite;
+}
+
+@keyframes typing{
+    0%{width:0;}
+    100%{width:21ch;}
+}
